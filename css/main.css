@@ -1,0 +1,211 @@
+/* VARIABLES */
+:root{
+    /* --main-text-color : #fff; */
+    /* --main-bg-color : #fff; */
+    /* --main-font-size : 16px; */
+    /* --main-font-weight : 400; */
+    /* --main-line-height : 1.5; */
+}
+*{
+    box-sizing: border-box;
+}
+/* GENERAL */
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+html{
+    height: 100%;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    height: auto;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* VISUALLY-HIDDEN */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* CONTAINER */
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* STICKY-FOOTER */
+.site-main{
+    flex-grow: 1;
+}
+
+/* Header start */
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Header end */
+
+/* Hero start */
+
+.hero {
+    padding: 40px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(7 , 200px);
+    grid-template-columns: repeat(4 , 310px);
+    gap: 40px;
+}
+
+.child:nth-of-type(1) {
+    background-image: url("../images/starrynightimage.png");
+}
+
+.child:nth-of-type(2) {
+    background-image: url("../images/pearlearninng.png");
+    background-size: cover;
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+}
+
+.child:nth-of-type(3) {
+    background-image: url("../images/guernica.png");
+}
+
+.child:nth-of-type(4) {
+    background-image: url("../images/panitentmagdalene.png");
+    background-size: cover;
+    grid-row: 1 / 3;
+    grid-column: 4 / 5;
+}
+
+.child:nth-of-type(5) {
+    background-image: url("../images/seaofgalilee.png");
+    background-size: cover;
+    grid-row: 2 / 4;
+}
+
+.child:nth-of-type(6) {
+    background-image: url("../images/kanagawa.png");
+    grid-column: 2 / 3;
+}
+
+.child:nth-of-type(7) {
+    background-image: url("../images/vangogh.png");
+    background-size: cover;
+    grid-row: 2 / 5;
+}
+
+.child:nth-of-type(8) {
+    background-image: url("../images/sleeepinggypse.png");
+}
+
+.child:nth-of-type(9) {
+    background-image: url("../images/ladyermin.png");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    grid-row: 4 /7
+}
+
+.child:nth-of-type(10) {
+    background-image: url("../images/nightcafe.png");
+    background-size: cover;
+    grid-row: 4 / 6
+}
+
+.child:nth-of-type(11) {
+    background-image: url("../images/theswing.png");
+    background-size: cover;
+    grid-row: 5 / 8;
+    grid-column: 4 /5;
+}
+
+.child:nth-of-type(12) {
+    background-image: url("../images/arnolfinepotriate.png");
+    background-size: cover;
+    grid-row: 6 / 8;
+}
+
+.child:nth-of-type(13) {
+    background-image: url("../images/monalisa.png");
+    background-size: cover;
+    grid-row: 5 / 7;
+}
+
+.child:nth-of-type(14) {
+    background-image: url("../images/basketofapples.png");
+}
+
+.child:nth-of-type(15) {
+    background-image: url("../images/sleeepinggypse.png");
+    grid-column: 3 / 4;
+    grid-row: 7 / 8;
+    
+}
+
+.child:nth-of-type(16) {
+    background-image: url("../images/redvest.png");
+}
+
+.child {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+.child-wrapper {
+    padding: 55px 32px;
+    /* background-color: red; */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.841672) 100%);
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 7px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #fff;
+    opacity: 0.75;
+}
+
+/* Hero end */
